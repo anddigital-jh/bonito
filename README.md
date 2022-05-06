@@ -11,6 +11,7 @@
 A PyTorch Basecaller for Oxford Nanopore Reads.
 
 ```bash
+docker compose run --service-ports --rm ontbonito
 $ pip install --upgrade pip
 $ pip install ont-bonito
 $ bonito basecaller dna_r10.4_e8.1_sup@v3.4 /data/reads > basecalls.bam
