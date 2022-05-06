@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  ontbonito:
+    container_name: ontbonito
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/home/app
+    restart: "no"
+    tty: true
+    privileged: true
+    stdin_open: true
+    entrypoint: /bin/bash
+    working_dir: /home/app
